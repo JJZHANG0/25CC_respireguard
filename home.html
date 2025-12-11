@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RespireGuard — Living in Breathopia</title>
+    <meta name="description" content="The world's first AI-adaptive anti-allergy breathing shield with real-time breathability optimization.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="home.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-text">RespireGuard</span>
+                    <span class="logo-accent"></span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="home.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="innovation.html" class="nav-link">Innovation</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="impact.html" class="nav-link">Impact</a></li>
+                <li><a href="brand.html" class="nav-link">Brand</a></li>
+                <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div id="hero-canvas-container"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>AI-Powered Breathing Technology</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">The World's First</span>
+                <span class="title-line gradient-text">AI-Adaptive</span>
+                <span class="title-line">Anti-Allergy Breathing Shield</span>
+            </h1>
+            <p class="hero-subtitle">High-efficiency filtration with real-time breathability optimization.</p>
+            <div class="hero-cta">
+                <a href="innovation.html" class="btn btn-primary">
+                    <span>Explore Innovation</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="gallery.html" class="btn btn-secondary">
+                    <span>View Model Gallery</span>
+                    <i class="fas fa-cube"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-value" data-value="99.9">0</div>
+                    <div class="stat-label">Filtration Efficiency %</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" data-value="85">0</div>
+                    <div class="stat-label">Comfort Score</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" data-value="40">0</div>
+                    <div class="stat-label">Less Breathing Resistance %</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Explore more</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="brand-logo">
+                        <div class="logo-symbol">
+                            <div class="logo-circle"></div>
+                            <div class="logo-wave"></div>
+                        </div>
+                        <span class="logo-wordmark">RespireGuard</span>
+                    </div>
+                    <p class="footer-tagline">Living in Breathopia</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="innovation.html">Technology</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="impact.html">Impact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RespireGuard. All rights reserved. | Innovating for healthier breathing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

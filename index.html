@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RespireGuard — Living in Breathopia</title>
+    <meta name="description" content="The world's first AI-adaptive anti-allergy breathing shield with real-time breathability optimization.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollToPlugin.min.js"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">RespireGuard</span>
+                <span class="logo-accent"></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#innovation" class="nav-link">Innovation</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#impact" class="nav-link">Impact</a></li>
+                <li><a href="#brand" class="nav-link">Brand</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div id="hero-canvas-container"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>AI-Powered Breathing Technology</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">The World's First</span>
+                <span class="title-line gradient-text">AI-Adaptive</span>
+                <span class="title-line">Anti-Allergy Breathing Shield</span>
+            </h1>
+            <p class="hero-subtitle">High-efficiency filtration with real-time breathability optimization.</p>
+            <div class="hero-cta">
+                <a href="#innovation" class="btn btn-primary">
+                    <span>Explore Innovation</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#gallery" class="btn btn-secondary">
+                    <span>View Model Gallery</span>
+                    <i class="fas fa-cube"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-value" data-value="99.9">0</div>
+                    <div class="stat-label">Filtration Efficiency %</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" data-value="85">0</div>
+                    <div class="stat-label">Comfort Score</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" data-value="40">0</div>
+                    <div class="stat-label">Less Breathing Resistance %</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Mission</span>
+                <h2 class="section-title">About RespireGuard</h2>
+                <p class="section-subtitle">Solving the filtration–breathability tradeoff for healthier breathing.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Origin Story</h3>
+                    <p>Founded by a team of biomedical engineers, materials scientists, and AI researchers who witnessed the growing public health challenge of air pollution and allergic diseases. We recognized that millions of people struggle daily with the impossible choice between protection and comfort.</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Mission</h3>
+                    <p>To revolutionize personal air protection by solving the fundamental filtration–breathability tradeoff through cutting-edge nanotechnology and AI-powered adaptive systems, making comfortable, effective breathing protection accessible to everyone.</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Vision</h3>
+                    <p>A world where sensitive individuals can breathe freely and confidently in any environment. We envision RespireGuard becoming the global standard for intelligent respiratory protection, enabling healthier lives for millions affected by allergies and air quality issues.</p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="card-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Values</h3>
+                    <p><strong>Innovation:</strong> Pushing boundaries in materials science and AI.<br><strong>Accessibility:</strong> Making premium protection available to all.<br><strong>Sustainability:</strong> Eco-friendly materials and long-lasting design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Minds Behind Innovation</span>
+                <h2 class="section-title">Our Team</h2>
+                <p class="section-subtitle">Multi-disciplinary experts united by a passion for breathable innovation.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card glass-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Sarah Chen</h3>
+                        <p class="team-role">Chief Executive Officer & Co-Founder</p>
+                        <p class="team-expertise"><strong>Expertise:</strong> Biomedical Engineering, Product Strategy</p>
+                        <p class="team-description">15+ years in medical device innovation. Led R&D teams at leading respiratory health companies. PhD in Biomedical Engineering from MIT.</p>
+                    </div>
+                </div>
+                <div class="team-card glass-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Michael Torres</h3>
+                        <p class="team-role">Chief Technology Officer</p>
+                        <p class="team-expertise"><strong>Expertise:</strong> AI Systems, Adaptive Algorithms</p>
+                        <p class="team-description">Former AI research lead at Google Health. Specialized in real-time adaptive systems and physiological sensing. Stanford PhD in Computer Science.</p>
+                    </div>
+                </div>
+                <div class="team-card glass-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Yuki Tanaka</h3>
+                        <p class="team-role">Head of Materials Science</p>
+                        <p class="team-expertise"><strong>Expertise:</strong> Nanofiber Technology, Filtration Materials</p>
+                        <p class="team-description">20+ years in advanced materials development. Previously at Toray Industries developing next-gen nanofibers. PhD in Materials Engineering from Tokyo University.</p>
+                    </div>
+                </div>
+                <div class="team-card glass-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Emma Rodriguez</h3>
+                        <p class="team-role">Director of Product Design</p>
+                        <p class="team-expertise"><strong>Expertise:</strong> Industrial Design, User Experience</p>
+                        <p class="team-description">Award-winning designer from Dyson and Apple. Specialized in creating premium, user-centered health products that merge aesthetics with functionality.</p>
+                    </div>
+                </div>
+                <div class="team-card glass-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Alex Kumar</h3>
+                        <p class="team-role">Lead Software Engineer</p>
+                        <p class="team-expertise"><strong>Expertise:</strong> Embedded Systems, IoT Integration</p>
+                        <p class="team-description">Built smart sensor systems for wearable medical devices. Expert in low-power computing and real-time data processing. MS from Carnegie Mellon.</p>
+                    </div>
+                </div>
+                <div class="team-card glass-card">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Lisa Wang</h3>
+                        <p class="team-role">Clinical Research Director</p>
+                        <p class="team-expertise"><strong>Expertise:</strong> Respiratory Health, Clinical Trials</p>
+                        <p class="team-description">Pulmonologist with 12+ years of clinical experience. Leads user testing and medical validation. MD from Johns Hopkins, specialized in allergy and immunology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Section -->
+    <section id="innovation" class="section innovation-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Core Technology</span>
+                <h2 class="section-title">The Innovation</h2>
+                <p class="section-subtitle">Breakthrough engineering that redefines respiratory protection.</p>
+            </div>
+
+            <!-- The Problem -->
+            <div class="innovation-block problem-block">
+                <h3 class="block-title">The Problem</h3>
+                <div class="problem-grid">
+                    <div class="problem-card glass-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-scale-unbalanced"></i>
+                        </div>
+                        <h4>Filtration vs. Breathability Conflict</h4>
+                        <p>Traditional masks force users to choose between effective protection and comfortable breathing. High-efficiency filters create excessive breathing resistance.</p>
+                    </div>
+                    <div class="problem-card glass-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Rising Allergy & Pollution Trends</h4>
+                        <p>Allergic diseases affect over 30% of the global population and continue to increase. Air quality degradation exposes billions to harmful particulates daily.</p>
+                    </div>
+                    <div class="problem-card glass-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-face-frown"></i>
+                        </div>
+                        <h4>Discomfort from Existing Masks</h4>
+                        <p>N95 masks are suffocating. Discreet nasal filters offer limited protection. Professional masks are conspicuous and socially awkward. Nobody wants to wear them long-term.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Solution -->
+            <div class="innovation-block solution-block">
+                <h3 class="block-title">The Solution</h3>
+                <div class="solution-visual">
+                    <div class="component-assembly" id="componentAssembly">
+                        <div class="component-layer layer-1">
+                            <div class="component-card glass-card">
+                                <div class="component-icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <h4>Nano-Gradient Fiber Layers</h4>
+                                <p>Multi-layer nanofiber structure with progressively smaller pore sizes. Captures allergens and pollutants while maintaining airflow. 99.9% filtration efficiency for particles down to 0.1 microns.</p>
+                            </div>
+                        </div>
+                        <div class="component-layer layer-2">
+                            <div class="component-card glass-card">
+                                <div class="component-icon">
+                                    <i class="fas fa-wind"></i>
+                                </div>
+                                <h4>Smart Airflow Valve</h4>
+                                <p>Real-time pressure differential monitoring and adjustment. Opens during inhalation for reduced resistance. Closes during exhalation to maintain filtration integrity. Responds in milliseconds.</p>
+                            </div>
+                        </div>
+                        <div class="component-layer layer-3">
+                            <div class="component-card glass-card">
+                                <div class="component-icon">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                                <h4>Dynamic Fit System</h4>
+                                <p>Flexible support structures adapt to facial contours. Soft-touch materials for skin contact zones. Adjustable straps with memory foam padding. Eliminates pressure points and air leakage.</p>
+                            </div>
+                        </div>
+                        <div class="component-layer layer-4">
+                            <div class="component-card glass-card">
+                                <div class="component-icon">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <h4>AI Adaptive Breathing Analysis</h4>
+                                <p>Embedded sensors monitor breathing rate, depth, and pattern. Machine learning algorithm identifies user profile (athlete, child, elderly, rhinitis patient). Auto-adjusts valve timing and sensitivity for personalized comfort.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unique Value Proposition -->
+            <div class="innovation-block uvp-block">
+                <h3 class="block-title">Unique Value Proposition</h3>
+                <div class="uvp-grid">
+                    <div class="uvp-card glass-card">
+                        <div class="uvp-number">01</div>
+                        <h4>Real-Time Pressure Differential Control</h4>
+                        <p>Smart valve dynamically adjusts mask pressure based on the wearer's physiological state, eliminating the breathability compromise entirely.</p>
+                    </div>
+                    <div class="uvp-card glass-card">
+                        <div class="uvp-number">02</div>
+                        <h4>Personalization via AI Profiles</h4>
+                        <p>Intelligent system evaluates condition and classifies user profiles for personalized adaptation. Each user gets a uniquely optimized breathing experience.</p>
+                    </div>
+                    <div class="uvp-card glass-card">
+                        <div class="uvp-number">03</div>
+                        <h4>High-Efficiency Allergen Filtration</h4>
+                        <p>Gradient nanofiber layers provide medical-grade protection against harmful particulate matter, pollen, and allergens without sacrificing comfort.</p>
+                    </div>
+                    <div class="uvp-card glass-card">
+                        <div class="uvp-number">04</div>
+                        <h4>Fashion-Forward Design</h4>
+                        <p>Discreet, premium aesthetic inspired by high-tech consumer electronics. Wearable for extended periods without social stigma or self-consciousness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sustainable Advantage -->
+            <div class="innovation-block advantage-block">
+                <h3 class="block-title">Sustainable Advantage</h3>
+                <div class="advantage-grid">
+                    <div class="advantage-card glass-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>AI-Powered Adaptive Technology</h4>
+                        <p>Proprietary machine learning algorithms trained on extensive physiological data. Equipped with user database for continuous personalized adjustments. Difficult to replicate without years of data collection.</p>
+                    </div>
+                    <div class="advantage-card glass-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h4>Advanced Nanofiber Materials</h4>
+                        <p>Next-generation high-efficiency and sustainable materials developed through multi-year R&D. Maximizes protection and filtration with long-term sustainable material supply chain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Product Showcase</span>
+                <h2 class="section-title">Model Gallery</h2>
+                <p class="section-subtitle">Experience RespireGuard from every angle.</p>
+            </div>
+            <div class="gallery-viewer">
+                <div id="model-viewer-container" class="model-viewer">
+                    <!-- 3D viewer will be initialized here -->
+                </div>
+                <div class="viewer-controls glass-card">
+                    <button class="control-btn" id="rotateLeft"><i class="fas fa-undo"></i></button>
+                    <button class="control-btn" id="rotateRight"><i class="fas fa-redo"></i></button>
+                    <button class="control-btn" id="zoomIn"><i class="fas fa-search-plus"></i></button>
+                    <button class="control-btn" id="zoomOut"><i class="fas fa-search-minus"></i></button>
+                    <button class="control-btn" id="resetView"><i class="fas fa-compress"></i></button>
+                </div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-card glass-card">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Product Render</span>
+                        </div>
+                    </div>
+                    <h4>Front View</h4>
+                </div>
+                <div class="gallery-card glass-card">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-pen-ruler"></i>
+                            <span>Engineering Sketch</span>
+                        </div>
+                    </div>
+                    <h4>Technical Drawing</h4>
+                </div>
+                <div class="gallery-card glass-card">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cube"></i>
+                            <span>Internal Structure</span>
+                        </div>
+                    </div>
+                    <h4>Component Breakdown</h4>
+                </div>
+                <div class="gallery-card glass-card">
+                    <div class="gallery-image airflow-animation">
+                        <div class="airflow-container">
+                            <div class="airflow-particle"></div>
+                            <div class="airflow-particle"></div>
+                            <div class="airflow-particle"></div>
+                            <div class="airflow-particle"></div>
+                            <div class="airflow-particle"></div>
+                        </div>
+                        <span>Airflow Visualization</span>
+                    </div>
+                    <h4>Reduced Resistance Flow</h4>
+                </div>
+                <div class="gallery-card glass-card">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-microscope"></i>
+                            <span>Prototype Testing</span>
+                        </div>
+                    </div>
+                    <h4>Lab Validation</h4>
+                </div>
+                <div class="gallery-card glass-card">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Lifestyle Shot</span>
+                        </div>
+                    </div>
+                    <h4>Real-World Use</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="section impact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Making a Difference</span>
+                <h2 class="section-title">Global Impact</h2>
+                <p class="section-subtitle">Measurable benefits for society and the environment.</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card glass-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Reduced Allergic Symptoms</h3>
+                    <p>Clinical trials show 78% reduction in allergic rhinitis symptoms among users. Significantly decreased medication dependency and improved quality of life for allergy sufferers.</p>
+                    <div class="impact-stat">
+                        <span class="stat-number" data-value="78">0</span>
+                        <span class="stat-unit">% Symptom Reduction</span>
+                    </div>
+                </div>
+                <div class="impact-card glass-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Improved Air-Quality Resilience</h3>
+                    <p>Users in high-pollution urban areas report 85% satisfaction in daily protection. Enables outdoor activities during poor air quality days that would otherwise be avoided.</p>
+                    <div class="impact-stat">
+                        <span class="stat-number" data-value="85">0</span>
+                        <span class="stat-unit">% Satisfaction</span>
+                    </div>
+                </div>
+                <div class="impact-card glass-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Benefits for Vulnerable Groups</h3>
+                    <p>Specially optimized profiles for children and elderly users. Pediatric version shows 92% compliance rate compared to 43% for traditional masks. Empowers sensitive groups to participate fully in daily life.</p>
+                    <div class="impact-stat">
+                        <span class="stat-number" data-value="92">0</span>
+                        <span class="stat-unit">% Compliance Rate</span>
+                    </div>
+                </div>
+                <div class="impact-card glass-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Public Health Contribution</h3>
+                    <p>Addresses the global challenge of respiratory allergies affecting 30%+ of the population. Reduces healthcare burden by preventing allergy-related complications and hospital visits.</p>
+                    <div class="impact-stat">
+                        <span class="stat-number" data-value="30">0</span>
+                        <span class="stat-unit">% Population Affected</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Visualization -->
+            <div class="data-visualization">
+                <h3 class="viz-title">Performance Metrics</h3>
+                <div class="charts-grid">
+                    <div class="chart-container glass-card">
+                        <canvas id="filtrationChart" style="height: 350px;"></canvas>
+                    </div>
+                    <div class="chart-container glass-card">
+                        <canvas id="comfortChart" style="height: 350px;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Section -->
+    <section id="brand" class="section brand-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visual Identity</span>
+                <h2 class="section-title">Brand Universe</h2>
+                <p class="section-subtitle">A design language that reflects precision, care, and innovation.</p>
+            </div>
+
+            <!-- Logo -->
+            <div class="brand-block logo-block glass-card">
+                <h3>Logo System</h3>
+                <div class="logo-showcase">
+                    <div class="logo-main">
+                        <div class="brand-logo">
+                            <div class="logo-symbol">
+                                <div class="logo-circle"></div>
+                                <div class="logo-wave"></div>
+                            </div>
+                            <span class="logo-wordmark">RespireGuard</span>
+                        </div>
+                        <p class="logo-tagline">Living in Breathopia</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color Palette -->
+            <div class="brand-block palette-block glass-card">
+                <h3>Color Palette</h3>
+                <div class="color-swatches">
+                    <div class="swatch">
+                        <div class="swatch-color" style="background: #0A0E27;"></div>
+                        <div class="swatch-info">
+                            <span class="swatch-name">Deep Navy</span>
+                            <span class="swatch-hex">#0A0E27</span>
+                        </div>
+                    </div>
+                    <div class="swatch">
+                        <div class="swatch-color" style="background: #00D9FF;"></div>
+                        <div class="swatch-info">
+                            <span class="swatch-name">Cyan Accent</span>
+                            <span class="swatch-hex">#00D9FF</span>
+                        </div>
+                    </div>
+                    <div class="swatch">
+                        <div class="swatch-color" style="background: #3B82F6;"></div>
+                        <div class="swatch-info">
+                            <span class="swatch-name">Electric Blue</span>
+                            <span class="swatch-hex">#3B82F6</span>
+                        </div>
+                    </div>
+                    <div class="swatch">
+                        <div class="swatch-color" style="background: #FFFFFF;"></div>
+                        <div class="swatch-info">
+                            <span class="swatch-name">Pure White</span>
+                            <span class="swatch-hex">#FFFFFF</span>
+                        </div>
+                    </div>
+                    <div class="swatch">
+                        <div class="swatch-color" style="background: #8B92B0;"></div>
+                        <div class="swatch-info">
+                            <span class="swatch-name">Cool Grey</span>
+                            <span class="swatch-hex">#8B92B0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typography -->
+            <div class="brand-block typography-block glass-card">
+                <h3>Typography</h3>
+                <div class="type-samples">
+                    <div class="type-sample">
+                        <h1 style="font-family: 'Orbitron', sans-serif; font-weight: 700;">Orbitron Bold</h1>
+                        <p>Headlines and brand text</p>
+                    </div>
+                    <div class="type-sample">
+                        <h2 style="font-family: 'Inter', sans-serif; font-weight: 400;">Inter Regular</h2>
+                        <p>Body copy and UI elements</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Iconography -->
+            <div class="brand-block icons-block glass-card">
+                <h3>Iconography</h3>
+                <div class="icon-set">
+                    <div class="icon-item"><i class="fas fa-wind"></i><span>Airflow</span></div>
+                    <div class="icon-item"><i class="fas fa-shield-alt"></i><span>Protection</span></div>
+                    <div class="icon-item"><i class="fas fa-brain"></i><span>AI Intelligence</span></div>
+                    <div class="icon-item"><i class="fas fa-layer-group"></i><span>Filtration</span></div>
+                    <div class="icon-item"><i class="fas fa-heartbeat"></i><span>Health</span></div>
+                    <div class="icon-item"><i class="fas fa-leaf"></i><span>Sustainability</span></div>
+                </div>
+            </div>
+
+            <!-- Packaging Mockup -->
+            <div class="brand-block packaging-block glass-card">
+                <h3>Packaging Design</h3>
+                <div class="packaging-visual">
+                    <div class="package-mockup">
+                        <div class="package-front">
+                            <div class="package-logo">
+                                <div class="logo-symbol-small">
+                                    <div class="logo-circle"></div>
+                                    <div class="logo-wave"></div>
+                                </div>
+                                <span>RespireGuard</span>
+                            </div>
+                            <div class="package-features">
+                                <span>• AI-Adaptive Technology</span>
+                                <span>• 99.9% Filtration</span>
+                                <span>• Ultra-Comfortable</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="packaging-note">Premium biomedical design with sustainable materials</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section timeline-section">
+        <div class="container-fluid">
+            <div class="section-header">
+                <span class="section-tag">Our Journey</span>
+                <h2 class="section-title">Development Timeline</h2>
+                <p class="section-subtitle">From concept to reality — key milestones in innovation.</p>
+            </div>
+            <div class="timeline-scroll-container">
+                <div class="timeline-track">
+                    <div class="timeline-item">
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-date">Q1 2022</div>
+                            <h4>Concept Formation</h4>
+                            <p>Initial research into filtration-breathability tradeoff. Team assembled from biomedical engineering, materials science, and AI backgrounds.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-date">Q2-Q4 2022</div>
+                            <h4>Material R&D</h4>
+                            <p>Development of nano-gradient fiber layers. Testing thousands of material combinations for optimal filtration and breathability.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-date">Q1-Q2 2023</div>
+                            <h4>AI Adaptive System</h4>
+                            <p>Machine learning algorithm development. Training on physiological breathing data from diverse user groups.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-date">Q3 2023</div>
+                            <h4>Prototype Testing</h4>
+                            <p>First functional prototypes created. Internal testing for comfort, filtration efficiency, and sensor accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-date">Q4 2023</div>
+                            <h4>3D Modeling & Design</h4>
+                            <p>Industrial design refinement. CAD modeling for manufacturing optimization. Dynamic fit system development.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-date">Q1 2024</div>
+                            <h4>Product Validation</h4>
+                            <p>Third-party lab testing for filtration standards. Regulatory compliance preparation. Design for manufacturing finalization.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-date">Q2-Q3 2024</div>
+                            <h4>Pilot Trials</h4>
+                            <p>Beta testing with 500+ users including rhinitis patients, children, and athletes. Iterative improvements based on real-world feedback.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-date">Q4 2024</div>
+                            <h4>Production Readiness</h4>
+                            <p>Manufacturing partnerships established. Supply chain secured for sustainable materials. Launch preparation underway.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-nav">
+                <button class="timeline-nav-btn" id="timelineLeft"><i class="fas fa-chevron-left"></i></button>
+                <button class="timeline-nav-btn" id="timelineRight"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact & Press</h2>
+                <p class="section-subtitle">We'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-container glass-card">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:hello@respireguard.io">hello@respireguard.io</a></p>
+                        <p><a href="mailto:press@respireguard.io">press@respireguard.io</a></p>
+                    </div>
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h4>Social Media</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h4>Press Kit</h4>
+                        <a href="#" class="btn btn-secondary btn-small">
+                            <span>Download Press Kit</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    <div class="info-card glass-card">
+                        <div class="info-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>Media Coverage</h4>
+                        <p class="coverage-note">Featured in TechCrunch, Wired, Fast Company, and MIT Technology Review.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="brand-logo">
+                        <div class="logo-symbol">
+                            <div class="logo-circle"></div>
+                            <div class="logo-wave"></div>
+                        </div>
+                        <span class="logo-wordmark">RespireGuard</span>
+                    </div>
+                    <p class="footer-tagline">Living in Breathopia</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#innovation">Technology</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#impact">Impact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#timeline">Timeline</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RespireGuard. All rights reserved. | Innovating for healthier breathing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

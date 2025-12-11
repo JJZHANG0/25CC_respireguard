@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Impact — RespireGuard</title>
+    <meta name="description" content="Measurable benefits for society and the environment.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="home.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-text">RespireGuard</span>
+                    <span class="logo-accent"></span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="innovation.html" class="nav-link">Innovation</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="impact.html" class="nav-link active">Impact</a></li>
+                <li><a href="brand.html" class="nav-link">Brand</a></li>
+                <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Impact Section -->
+    <section class="section impact-section" style="padding-top: 150px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Making a Difference</span>
+                <h2 class="section-title">Global Impact</h2>
+                <p class="section-subtitle">Measurable benefits for society and the environment.</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card glass-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Reduced Allergic Symptoms</h3>
+                    <p>Clinical trials show 78% reduction in allergic rhinitis symptoms among users. Significantly decreased medication dependency and improved quality of life for allergy sufferers.</p>
+                    <div class="impact-stat">
+                        <span class="stat-number" data-value="78">0</span>
+                        <span class="stat-unit">% Symptom Reduction</span>
+                    </div>
+                </div>
+                <div class="impact-card glass-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Improved Air-Quality Resilience</h3>
+                    <p>Users in high-pollution urban areas report 85% satisfaction in daily protection. Enables outdoor activities during poor air quality days that would otherwise be avoided.</p>
+                    <div class="impact-stat">
+                        <span class="stat-number" data-value="85">0</span>
+                        <span class="stat-unit">% Satisfaction</span>
+                    </div>
+                </div>
+                <div class="impact-card glass-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Benefits for Vulnerable Groups</h3>
+                    <p>Specially optimized profiles for children and elderly users. Pediatric version shows 92% compliance rate compared to 43% for traditional masks. Empowers sensitive groups to participate fully in daily life.</p>
+                    <div class="impact-stat">
+                        <span class="stat-number" data-value="92">0</span>
+                        <span class="stat-unit">% Compliance Rate</span>
+                    </div>
+                </div>
+                <div class="impact-card glass-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Public Health Contribution</h3>
+                    <p>Addresses the global challenge of respiratory allergies affecting 30%+ of the population. Reduces healthcare burden by preventing allergy-related complications and hospital visits.</p>
+                    <div class="impact-stat">
+                        <span class="stat-number" data-value="30">0</span>
+                        <span class="stat-unit">% Population Affected</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Visualization -->
+            <div class="data-visualization">
+                <h3 class="viz-title">Performance Metrics</h3>
+                <div class="charts-grid">
+                    <div class="chart-container glass-card">
+                        <canvas id="filtrationChart" style="height: 350px;"></canvas>
+                    </div>
+                    <div class="chart-container glass-card">
+                        <canvas id="comfortChart" style="height: 350px;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="brand-logo">
+                        <div class="logo-symbol">
+                            <div class="logo-circle"></div>
+                            <div class="logo-wave"></div>
+                        </div>
+                        <span class="logo-wordmark">RespireGuard</span>
+                    </div>
+                    <p class="footer-tagline">Living in Breathopia</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="innovation.html">Technology</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="impact.html">Impact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RespireGuard. All rights reserved. | Innovating for healthier breathing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

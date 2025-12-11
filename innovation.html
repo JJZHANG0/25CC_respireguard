@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation — RespireGuard</title>
+    <meta name="description" content="Discover RespireGuard's breakthrough engineering and core technology.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="home.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-text">RespireGuard</span>
+                    <span class="logo-accent"></span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="innovation.html" class="nav-link active">Innovation</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="impact.html" class="nav-link">Impact</a></li>
+                <li><a href="brand.html" class="nav-link">Brand</a></li>
+                <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Innovation Section -->
+    <section class="section innovation-section" style="padding-top: 150px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Core Technology</span>
+                <h2 class="section-title">The Innovation</h2>
+                <p class="section-subtitle">Breakthrough engineering that redefines respiratory protection.</p>
+            </div>
+
+            <!-- The Problem -->
+            <div class="innovation-block problem-block">
+                <h3 class="block-title">The Problem</h3>
+                <div class="problem-grid">
+                    <div class="problem-card glass-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-scale-unbalanced"></i>
+                        </div>
+                        <h4>Filtration vs. Breathability Conflict</h4>
+                        <p>Traditional masks force users to choose between effective protection and comfortable breathing. High-efficiency filters create excessive breathing resistance.</p>
+                    </div>
+                    <div class="problem-card glass-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Rising Allergy & Pollution Trends</h4>
+                        <p>Allergic diseases affect over 30% of the global population and continue to increase. Air quality degradation exposes billions to harmful particulates daily.</p>
+                    </div>
+                    <div class="problem-card glass-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-face-frown"></i>
+                        </div>
+                        <h4>Discomfort from Existing Masks</h4>
+                        <p>N95 masks are suffocating. Discreet nasal filters offer limited protection. Professional masks are conspicuous and socially awkward. Nobody wants to wear them long-term.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Solution -->
+            <div class="innovation-block solution-block">
+                <h3 class="block-title">The Solution</h3>
+                <div class="solution-visual">
+                    <div class="component-assembly" id="componentAssembly">
+                        <div class="component-layer layer-1">
+                            <div class="component-card glass-card">
+                                <div class="component-icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <h4>Nano-Gradient Fiber Layers</h4>
+                                <p>Multi-layer nanofiber structure with progressively smaller pore sizes. Captures allergens and pollutants while maintaining airflow. 99.9% filtration efficiency for particles down to 0.1 microns.</p>
+                            </div>
+                        </div>
+                        <div class="component-layer layer-2">
+                            <div class="component-card glass-card">
+                                <div class="component-icon">
+                                    <i class="fas fa-wind"></i>
+                                </div>
+                                <h4>Smart Airflow Valve</h4>
+                                <p>Real-time pressure differential monitoring and adjustment. Opens during inhalation for reduced resistance. Closes during exhalation to maintain filtration integrity. Responds in milliseconds.</p>
+                            </div>
+                        </div>
+                        <div class="component-layer layer-3">
+                            <div class="component-card glass-card">
+                                <div class="component-icon">
+                                    <i class="fas fa-expand-alt"></i>
+                                </div>
+                                <h4>Dynamic Fit System</h4>
+                                <p>Flexible support structures adapt to facial contours. Soft-touch materials for skin contact zones. Adjustable straps with memory foam padding. Eliminates pressure points and air leakage.</p>
+                            </div>
+                        </div>
+                        <div class="component-layer layer-4">
+                            <div class="component-card glass-card">
+                                <div class="component-icon">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <h4>AI Adaptive Breathing Analysis</h4>
+                                <p>Embedded sensors monitor breathing rate, depth, and pattern. Machine learning algorithm identifies user profile (athlete, child, elderly, rhinitis patient). Auto-adjusts valve timing and sensitivity for personalized comfort.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unique Value Proposition -->
+            <div class="innovation-block uvp-block">
+                <h3 class="block-title">Unique Value Proposition</h3>
+                <div class="uvp-grid">
+                    <div class="uvp-card glass-card">
+                        <div class="uvp-number">01</div>
+                        <h4>Real-Time Pressure Differential Control</h4>
+                        <p>Smart valve dynamically adjusts mask pressure based on the wearer's physiological state, eliminating the breathability compromise entirely.</p>
+                    </div>
+                    <div class="uvp-card glass-card">
+                        <div class="uvp-number">02</div>
+                        <h4>Personalization via AI Profiles</h4>
+                        <p>Intelligent system evaluates condition and classifies user profiles for personalized adaptation. Each user gets a uniquely optimized breathing experience.</p>
+                    </div>
+                    <div class="uvp-card glass-card">
+                        <div class="uvp-number">03</div>
+                        <h4>High-Efficiency Allergen Filtration</h4>
+                        <p>Gradient nanofiber layers provide medical-grade protection against harmful particulate matter, pollen, and allergens without sacrificing comfort.</p>
+                    </div>
+                    <div class="uvp-card glass-card">
+                        <div class="uvp-number">04</div>
+                        <h4>Fashion-Forward Design</h4>
+                        <p>Discreet, premium aesthetic inspired by high-tech consumer electronics. Wearable for extended periods without social stigma or self-consciousness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sustainable Advantage -->
+            <div class="innovation-block advantage-block">
+                <h3 class="block-title">Sustainable Advantage</h3>
+                <div class="advantage-grid">
+                    <div class="advantage-card glass-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>AI-Powered Adaptive Technology</h4>
+                        <p>Proprietary machine learning algorithms trained on extensive physiological data. Equipped with user database for continuous personalized adjustments. Difficult to replicate without years of data collection.</p>
+                    </div>
+                    <div class="advantage-card glass-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h4>Advanced Nanofiber Materials</h4>
+                        <p>Next-generation high-efficiency and sustainable materials developed through multi-year R&D. Maximizes protection and filtration with long-term sustainable material supply chain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="brand-logo">
+                        <div class="logo-symbol">
+                            <div class="logo-circle"></div>
+                            <div class="logo-wave"></div>
+                        </div>
+                        <span class="logo-wordmark">RespireGuard</span>
+                    </div>
+                    <p class="footer-tagline">Living in Breathopia</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="innovation.html">Technology</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="impact.html">Impact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RespireGuard. All rights reserved. | Innovating for healthier breathing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
